@@ -9,7 +9,7 @@ Designed for 100% free-of-cost local execution without requiring Docker or paid 
 ## 📸 User Interface
 
 <p align="center">
-  <img src="VC.png" alt="Voice Assistant Interface" width="80%" />
+  <img src="pic1.png" alt="Voice Assistant Interface" width="80%" />
 </p>
 
 ---
