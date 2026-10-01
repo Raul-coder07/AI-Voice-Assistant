@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="dark-mode">
+    <div class="app-container">
+        <header>
+            <h1>Voice Assistant</h1>
+            <p>Your personal assistant powered by OpenAI's GPT, Whisper & TTS</p>
+            <p class="subtitle">Try asking: What can you specifically do? Type in your question or record it by clicking the microphone!</p>
+            
+            <div class="controls">
+                <div class="toggle-container">
+                    <input type="checkbox" id="theme-toggle" checked>
+                    <label for="theme-toggle">Toggle light/dark mode</label>
+                </div>
+
+                <div class="voice-picker">
+                    <label for="voice-select">Choose a Voice</label>
+                    <select id="voice-select">
+                    <option value="com">American English (US)</option>
+                    <option value="co.uk">British English (UK)</option>
+                    <option value="com.au">Australian English</option>
+                    <option value="co.in">Indian English</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <main id="chat-container" class="chat-container">
+            <!-- Los mensajes se renderizan dinámicamente aquí -->
+        </main>
+
+        <footer>
+            <div class="input-box">
+                <input type="text" id="user-input" placeholder="Type your message here..." />
+                <button id="mic-btn" class="mic-btn" title="Record Voice">🎤</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
